@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  background-color: rgb(99, 92, 92);
+  font-family: Garamond, Helvetica, serif;
+  font-size: 16px;
+}
+
+.container2 {
+  text-align: center;
+  margin-bottom: 20px; /* Add margin for spacing */
+}
+
+h1 {
+  font-size: 64px; /* Make the name much larger */
+  font-weight: normal;
+  border-bottom: 1px solid black;
+  width: 80%;
+  margin: 0 auto; /* Shorthand for margin-left: auto; margin-right: auto; */
+  margin-bottom: 20px; /* Add margin below the name */
+}
+
+.info_box {
+  max-width: 1000px; /* Set a maximum width for the info boxes */
+  margin: 0 auto; /* Center the boxes horizontally */
+  padding: 20px; /* Add padding for spacing */
+  background-color: rgba(248, 248, 248, .25); /* Background color for the box */
+  border: 1px solid black; /* Add border */
+  border-radius: 10px; /* Add rounded corners */
+  margin-bottom: 20px; /* Add margin for spacing between content boxes */
+}
+.info_box h4 {
+  margin-top: 0; /* Remove default margin */
+  font-size: 24px; /* Increase font size */
+}
+
+.info_box p {
+  font-size: 20px; /* Increase font size */
+
+}
+
+.info_box h4 {
+  margin-top: 0; /* Remove default margin */
+}
+
+.tab_box {
+  display: flex;
+  justify-content: center; /* Center align the tabs */
+  margin-bottom: 20px;
+}
+
+/* Adjust the width of each tab button to a fixed value */
+.tab_btn {
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  background-color: transparent; /* Remove background color */
+  border: none; /* Remove borders */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  margin: 0 10px; /* Add margin for spacing between tabs */
+}
+
+.tab_btn:hover {
+  text-decoration: underline; /* Underline text on hover */
+}
+
+.tab_btn.active {
+  font-weight: bold; /* Example style for the active tab */
+}
+
+.line {
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Make sure the line spans the full width */
+  border: none; /* Remove border */
+}
+
+.content_box {
+  margin-bottom: 20px; /* Add margin for spacing between content boxes */
+}
+
+.content {
+  padding: 20px;
+  display: none; /* Hide content by default */
+}
+
+/* Show active content */
+.content.active {
+  display: block;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 48px; /* Decrease font size for smaller screens */
+  }
+  .tab_btn {
+      font-size: 16px;
+  }
+}
+
+.tab-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tab-item {
+  padding: 10px 20px;
+  background-color: #445e7a; /* Blue color for tabs */
+  color: #fff; /* White text color */
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.tab-item:hover {
+  background-color: #445e7a; /* Darker blue on hover */
+}
+
+.tab-item.active {
+  background-color: #445e7a; /* Darker blue for active tab */
+  border-bottom: 2px solid #333; /* Highlight active tab */
+}
+
+.content-box {
+  display: none; /* Hide content boxes by default */
+  padding: 20px;
+  border: 1px solid #333;
+  border-top: none;
+}
+
+.content-box.active {
+  display: block; /* Show active content box */
+}
+.project-link {
+  display: block;
+  margin-bottom: 20px;
+}
+
+
+
